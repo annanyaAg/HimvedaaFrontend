@@ -1,0 +1,49 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-slide {
+  animation: scrollX 20s linear infinite;
+}
+
+.announcement-marquee {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-text {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* announcement bar */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+ 
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
+}
+ 
